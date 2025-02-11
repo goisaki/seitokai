@@ -1,11 +1,19 @@
 {
   "name": "seitokai",
-  "module": "index.ts",
-  "type": "module",
+  "private": true,
+  "scripts": {
+    "check": "biome check --write",
+    "env:edit": "EDITOR=\"code --wait\" sops .env.json"
+  },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
