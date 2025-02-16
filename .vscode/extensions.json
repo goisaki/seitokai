@@ -1,0 +1,7 @@
+{
+	"recommendations": [
+		"biomejs.biome",
+		"csstools.postcss",
+		"bradlc.vscode-tailwindcss"
+	],
+}
